@@ -30,6 +30,7 @@ public class UserRestController {
     @GetMapping("/{userNo}")
     public ResponseEntity<UserDto> getUserByuserNo(@PathVariable String userNo) {
         UserDto userDto = userService.getUserByuserNo(userNo);
+        //테스트주석
         return ResponseEntity.ok(userDto);
     }
 }
