@@ -1,0 +1,9 @@
+resources:
+  - configmap.yaml
+  - deployment.yaml
+  - service.yaml
+  - ingress.yaml
+  - namespace.yaml
+  - edu-user.yaml
+  - edu-goods.yaml
+  - hpa.yaml

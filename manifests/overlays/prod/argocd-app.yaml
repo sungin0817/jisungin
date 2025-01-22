@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: edu-app
+  namespace: argocd  # ArgoCD가 설치된 네임스페이스
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/your-org/your-repo.git'  # Git 저장소 URL
+    targetRevision: main                                # 브랜치 이름
+    path: manifests/overlays/prod                      # 경로 (overlays/prod)
+  destination:
+    server: https://kubernetes.default.svc             # 쿠버네티스 API 서버
+    namespace: edu-user                                # 기본 네임스페이스 (edu-user)
+  syncPolicy:
+    automated:                                        # 자동 동기화 설정
+      prune: true                                    # 불필요한 리소스 자동 삭제
+      selfHeal: true          
