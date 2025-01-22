@@ -1,14 +1,6 @@
+# base/kustomization.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-#namePrefix: prod-
 resources:
-- ../../base
-#  - pvc.yaml
-patchesStrategicMerge:
-- configmap.yaml
-- deployment.yaml
-- ingress.yaml
-- hpa-patch.yaml
-images:
-- name: ydcho0902/k8s-edu
-  newTag: "202501191311"
+  - edu-user/
+  - edu-goods/

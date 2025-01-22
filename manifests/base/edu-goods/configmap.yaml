@@ -1,0 +1,11 @@
+# edu-goods/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: edu-goods-config
+  namespace: edu-goods
+data:
+  config.json: |
+    {
+      "key": "value"
+    }

@@ -1,0 +1,14 @@
+# edu-goods/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: edu-goods-service
+  namespace: edu-goods
+spec:
+  selector:
+    app: edu-goods
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer  # 외부 접근을 위해 LoadBalancer 설정
