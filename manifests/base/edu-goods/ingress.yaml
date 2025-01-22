@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: edu-goods.xxx.xxx.xxx.sslip.io
+    - host: edu-goods.211.254.212.155.sslip.io
       http:
         paths:
           - path: /api/v1/goods/{goodsNo}
@@ -17,4 +17,4 @@ spec:
               service:
                 name: edu-goods-service
                 port:
-                  number: 80
+                  number: 30001
