@@ -8,6 +8,7 @@ patchesStrategicMerge:
 - configmap.yaml
 - deployment.yaml
 - ingress.yaml
+- hpa-patch.yaml
 images:
 - name: ydcho0902/k8s-edu
   newTag: "202501191311"
