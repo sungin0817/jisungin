@@ -17,4 +17,4 @@ spec:
               service:
                 name: edu-user-service
                 port:
-                  number: 80
+                  number: 30001
