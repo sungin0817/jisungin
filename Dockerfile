@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY build/libs/*.jar demo.jar
+COPY build/libs/demo-0.0.1-SNAPSHOT.jar demo.jar
 
 # Expose the port Spring Boot runs on
 EXPOSE 8080
