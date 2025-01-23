@@ -4,8 +4,8 @@ kind: Ingress
 metadata:
   name: edu-user-ingress
   namespace: edu-user
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+#  annotations:
+#  nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
     - host: edu-user.211.254.212.155.sslip.io
@@ -17,4 +17,4 @@ spec:
               service:
                 name: edu-user-service
                 port:
-                  number: 30001
+                  number: 80
