@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: edu-goods-container
-          image: jisungin/k8s-edu:v0.0.3
+          image: jisungin/k8s-edu:v0.0.2
           ports:
             - containerPort: 8080
