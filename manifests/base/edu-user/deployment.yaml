@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: edu-user-container
-          image: jisungin/k8s-demo:v0.0.2
+          image: jisungin/k8s-edu:v0.0.2
           ports:
             - containerPort: 8080
